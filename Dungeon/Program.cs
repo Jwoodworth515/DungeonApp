@@ -76,16 +76,15 @@ namespace Dungeon
                         "A) Attack\n" +
                         "R) Run Away\n" +
                         "P) Player Info\n" +
-                        "M) Monster Info\n" +
+                        "M) Opponent Info\n" +
                         "X) Exit\n");
 
-                    //Catch the user choice
-                    ConsoleKey userChoice = Console.ReadKey(true).Key;
+                    ConsoleKey userAction = Console.ReadKey(true).Key;
                     //Clear the console after the user chooses
                     Console.Clear();
 
                     //Build our menu functionality
-                    switch (userChoice)
+                    switch (userAction)
                     {
                         case ConsoleKey.A:
                             Console.WriteLine("Attack");
