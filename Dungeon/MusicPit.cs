@@ -31,6 +31,11 @@ namespace Dungeon
             Weapon fannyPack = new Weapon(1, 10, "Fanny Pack", 12, false);
             Player player = new Player("The Hipster", 50, 15, 40, 40, Hero.TheHipster, fannyPack);
 
+            do
+            {
+
+            } while (true);
+
 
         }//end LoadRoom()
     }//end class
