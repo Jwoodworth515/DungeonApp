@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    public class Weapons
+    public class Weapon
     {
         //fields
         private int _minDamage;
@@ -34,7 +34,7 @@ namespace ClassLibrary
         }
 
         //ctors
-        public Weapons(int minDamage, int maxDamage, string name, int bonusHitchance, bool isTwoHanded)
+        public Weapon(int minDamage, int maxDamage, string name, int bonusHitchance, bool isTwoHanded)
         {
             MaxDamage = maxDamage;
             MinDamage = minDamage;
