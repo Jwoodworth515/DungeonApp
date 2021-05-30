@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    public class Trainwreck : Monster
+    public class Scalper : Monster
     {
         //property
         public DateTime HourChangeBack { get; set; }
 
         //ctor
-        public Trainwreck(string name, int life, int maxLife, int hitChance, int block, int minDamage, int maxDamage, string description) : base(name, life, maxLife, hitChance, block, minDamage, maxDamage, description)
+        public Scalper(string name, int life, int maxLife, int hitChance, int block, int minDamage, int maxDamage, string description) : base(name, life, maxLife, hitChance, block, minDamage, maxDamage, description)
         {
             HourChangeBack = DateTime.Now;
 
-            if (HourChangeBack.Hour < 3 || HourChangeBack.Hour > 20)
+            if (HourChangeBack.Hour < 6 || HourChangeBack.Hour > 18)
             {
                 hitChance += 10;
                 block = +10;
@@ -29,7 +29,7 @@ namespace ClassLibrary
         {
             return string.Format("{0}\n{1}",
                 base.ToString(),
-                HourChangeBack.Hour < 3 || HourChangeBack.Hour > 20 ? "What a hot mess!  She's is raging out of control" : "In the daylight she is a sobbing disaster and might drown you in her tears of embarassment and regret.");
+                HourChangeBack.Hour < 12 || HourChangeBack.Hour > 18 ? "Did this guy buy all of the tickets to the show!\n Look at him walking around snapping his rubberbands like he owns the place." : "He must of got stiffed with a bunch of tickets, he looks pretty marose now.");
         }
     }
 }
