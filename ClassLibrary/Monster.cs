@@ -26,16 +26,15 @@ namespace ClassLibrary
                 else
                 {
                     _minDamage = 1;
-                }//end else
-            }//end set
-        }//end MinDamage
+                }
+            }
+        }//end props
 
         //ctors - default and FQ
         public Monster() { }
 
         public Monster(string name, int life, int maxLife, int hitChance, int block, int minDamage, int maxDamage, string description)
         {
-            //Set maxlife and maxdamage
             MaxLife = maxLife;
             MaxDamage = maxDamage;
             Name = name;
@@ -44,7 +43,7 @@ namespace ClassLibrary
             Block = block;
             MinDamage = minDamage;
             Description = description;
-        }//8 total
+        }//ctors
 
         //methods - ToString, CalcDamage
         public override string ToString()
@@ -55,13 +54,11 @@ namespace ClassLibrary
                 Name, Life, MaxLife, MinDamage, MaxDamage, Block, Description);
         }//end ToString()
 
-        //We will override CalcDamage to use min and max damage properties.
         public override int CalcDamage()
         {
             Random rand = new Random();
-            return rand.Next(MinDamage, MaxDamage + 1);//We add 1 here to account for the exclusive upper bound in the .Next()
-            //This is a refactored version of what we did in Characters.************
-        }
+            return rand.Next(MinDamage, MaxDamage + 1);
+        }//end methods
 
     }//end class
 }//end namespace

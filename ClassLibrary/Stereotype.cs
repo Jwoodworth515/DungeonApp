@@ -15,7 +15,7 @@ namespace ClassLibrary
         TheGiant,
         TheVIP,
         TheRaver
-    }
+    }//end enum Hero
     public enum Villian
     {
         TheScalper,
@@ -25,5 +25,6 @@ namespace ClassLibrary
         TheBro,
         MudPeople,
         TheHippie
-    }
-}
+    }//end enum Villian
+
+}//end namespace

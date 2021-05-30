@@ -31,7 +31,7 @@ namespace ClassLibrary
                     _minDamage = 1;
                 }
             }
-        }
+        }//end props
 
         //ctors
         public Weapon(int minDamage, int maxDamage, string name, int bonusHitchance, bool isTwoHanded)
@@ -40,7 +40,7 @@ namespace ClassLibrary
             MinDamage = minDamage;
             Name = name;
             IsTwoHanded = isTwoHanded;
-        }
+        }//end ctors
 
         //methods
         public override string ToString()
@@ -50,5 +50,6 @@ namespace ClassLibrary
                 Name, MinDamage, MaxDamage, BonusHitChance,
                 IsTwoHanded ? "Two-Handed" : "One-Handed");
         }//end ToString()
+
     }//end class
 }//end namespace

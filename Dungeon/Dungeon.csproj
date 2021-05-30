@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppNotes.cs" />
+    <Compile Include="WireFrame.cs" />
     <Compile Include="MusicPit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

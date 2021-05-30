@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ClassLibrary;
 
 namespace ClassLibrary
 {
@@ -30,6 +31,7 @@ namespace ClassLibrary
             return string.Format("{0}\n{1}",
                 base.ToString(),
                 HourChangeBack.Hour < 12 || HourChangeBack.Hour > 18 ? "Did this guy buy all of the tickets to the show!\n Look at him walking around snapping his rubberbands like he owns the place." : "He must of got stiffed with a bunch of tickets, he looks pretty marose now.");
-        }
-    }
-}
+        }//end ToString()
+
+    }//end class
+}//end namespace

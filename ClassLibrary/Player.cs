@@ -53,5 +53,6 @@ namespace ClassLibrary
         {
             return base.CalcHitChance() + EquippedWeapon.BonusHitChance;
         }//end CalcHitchance
-    }
-}
+
+    }//end class
+}//end namespace

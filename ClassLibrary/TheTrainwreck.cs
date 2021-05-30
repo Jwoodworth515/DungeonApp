@@ -30,6 +30,7 @@ namespace ClassLibrary
             return string.Format("{0}\n{1}",
                 base.ToString(),
                 HourChangeBack.Hour < 3 || HourChangeBack.Hour > 20 ? "What a hot mess!  She's is raging out of control" : "In the daylight she is a sobbing disaster and might drown you in her tears of embarassment and regret.");
-        }
-    }
-}
+        }//end string
+
+    }//end class
+}//end namespace
