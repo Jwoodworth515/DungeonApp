@@ -30,6 +30,8 @@ namespace ClassLibrary
             }
         }//end props
 
+        public static int Length { get; set; }
+
         //ctors - default and FQ
         public Monster() { }
 

@@ -10,10 +10,12 @@ namespace ClassLibrary
     {
         //properties
         public Hero CharacterRace { get; set; }
-        public Villian CharacerRace { get; set; }
+        public Villain CharacerRace { get; set; }
         public Weapon EquippedWeapon { get; set; }
+        public static int Length { get; set; }
 
         //ctors - FQ
+
         public Player(string name, int hitChance, int block, int life, int maxLife, Hero characterRace, Weapon equippedWeapon)
         {
             //prop = param;

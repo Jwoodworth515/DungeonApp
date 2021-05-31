@@ -8,15 +8,15 @@ namespace ClassLibrary
 {
     public enum Hero
     {
-        TheHipster,
-        TheSuperFan,
-        TheDancer,
-        MerchHound,
-        TheGiant,
-        TheVIP,
-        TheRaver
+        TheHipster = 1,
+        TheSuperFan = 2,
+        TheDancer = 3,
+        MerchHound = 4,
+        TheGiant = 5,
+        TheVIP = 6,
+        TheRaver = 7,
     }//end enum Hero
-    public enum Villian
+    public enum Villain
     {
         TheScalper,
         TheHeckler,

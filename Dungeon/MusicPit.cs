@@ -14,13 +14,62 @@ namespace Dungeon
         {
             Console.Title = "The Music Pit";
             Thread.Sleep(1000);
-            Console.WriteLine("\nCan you survive the perils of the Music Pit?\n");
+            Console.WriteLine("\nCan you survive the perils of\n");
+            Thread.Sleep(2000);
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(@"
+▄▄▄█████▓ ██░ ██ ▓█████     ███▄ ▄███▓ █    ██   ██████  ██▓ ▄████▄      ██▓███   ██▓▄▄▄█████▓
+▓  ██▒ ▓▒▓██░ ██▒▓█   ▀    ▓██▒▀█▀ ██▒ ██  ▓██▒▒██    ▒ ▓██▒▒██▀ ▀█     ▓██░  ██▒▓██▒▓  ██▒ ▓▒
+▒ ▓██░ ▒░▒██▀▀██░▒███      ▓██    ▓██░▓██  ▒██░░ ▓██▄   ▒██▒▒▓█    ▄    ▓██░ ██▓▒▒██▒▒ ▓██░ ▒░
+░ ▓██▓ ░ ░▓█ ░██ ▒▓█  ▄    ▒██    ▒██ ▓▓█  ░██░  ▒   ██▒░██░▒▓▓▄ ▄██▒   ▒██▄█▓▒ ▒░██░░ ▓██▓ ░ 
+  ▒██▒ ░ ░▓█▒░██▓░▒████▒   ▒██▒   ░██▒▒▒█████▓ ▒██████▒▒░██░▒ ▓███▀ ░   ▒██▒ ░  ░░██░  ▒██▒ ░ 
+  ▒ ░░    ▒ ░░▒░▒░░ ▒░ ░   ░ ▒░   ░  ░░▒▓▒ ▒ ▒ ▒ ▒▓▒ ▒ ░░▓  ░ ░▒ ▒  ░   ▒▓▒░ ░  ░░▓    ▒ ░░   
+    ░     ▒ ░▒░ ░ ░ ░  ░   ░  ░      ░░░▒░ ░ ░ ░ ░▒  ░ ░ ▒ ░  ░  ▒      ░▒ ░      ▒ ░    ░    
+  ░       ░  ░░ ░   ░      ░      ░    ░░░ ░ ░ ░  ░  ░   ▒ ░░           ░░        ▒ ░  ░      
+          ░  ░  ░   ░  ░          ░      ░           ░   ░  ░ ░                   ░           
+                                                            ░                                 
+");
             Thread.Sleep(3000);
+            Console.Clear();
+            Console.WriteLine();
+            Console.WriteLine(@"                         
+                           {    }
+                           K,   }
+                          /  ~Y`
+                     ,   /   /
+                    {_'-K.__/
+                      `/-.__L._
+                      /  ' /`\_}
+                     /  ' /
+             ____   /  ' /
+      ,-'~~~~    ~~/  ' /_
+    ,'             ``~~~  ',
+   (                        Y
+  {                         I
+ {      -                    `,
+ |       ',                   )
+ |        |   ,..__      __. Y
+ |    .,_./  Y ' / ^Y   J   )|
+ \           |' /   |   |   ||
+  \          L_/    . _ (_,.'(
+   \,   ,      ^^""' / |      )
+     \_  \          /,L]     /
+       '-_~-,       ` `   ./`
+          `'{_            )
+              ^^\..___,.--`");
+
+            Console.WriteLine();
+            Thread.Sleep(2000);
+            Console.WriteLine("Press any key to enter if you dare");
+            Console.ReadKey(true);
+            Console.ResetColor();
+            Console.Clear();
             Console.WriteLine("There are many obstacles that stand between you and the coveted Backstage\n");
             Thread.Sleep(3000);
             Console.Write("Will your story tell the legend of a Hero?\n");
             Thread.Sleep(2500);
-            Console.WriteLine("or that of a victory for Villian's?\n");
+            Console.WriteLine("or that of a Villain?\n");
             Thread.Sleep(3000);
             Console.Write("Tread carefully as you descend into the Madness........\n");
             Thread.Sleep(4000);
@@ -28,20 +77,68 @@ namespace Dungeon
 
             int score = 0;
 
+
+            #region MyRegion
+            bool repeatQuestion = false;
+            do
+            {
+            Thread.Sleep(1000);
+            Console.WriteLine("Choose your path:\n" +
+                "H) Hero\n" +
+                "V) Villain\n");
+            ConsoleKey userChoice = Console.ReadKey(true).Key;
+            switch (userChoice)
+            {
+                case ConsoleKey.H:
+                    Console.WriteLine("Your friends will speak of this night as if it were a myth./n");
+
+
+                        //if (true)
+                        //{
+                        //Random rand1 = new Random();
+                            //int randomNbr1 = rand1.Next(Player.Length);
+                            //Player player = Player[randomNbr1];
+                        //}
+                        break;
+                case ConsoleKey.V:
+                    Console.WriteLine("You have chosen a dark path.../n");
+                        //if (true)
+                        //{
+                        // Monster[] monsters = { t1, s1, };
+                        //Random rand2 = new Random();
+                        //int randomNbr2 = rand2.Next(Monster.Length);
+                        //Monster monster = monster[randomNbr2];
+                        //}
+                        break;
+                default:
+                    Console.WriteLine("There are only two paths, choose your destiny!");
+                    break;
+            }
+            } while (repeatQuestion);
+            Thread.Sleep(1000);
+            #endregion
+            Console.Clear();
+
             Weapon fannyPack = new Weapon(1, 10, "Fanny Pack", 12, false);
             Player player = new Player("The Hipster", 50, 15, 40, 40, Hero.TheHipster, fannyPack);
 
-            bool exit = false;
+            bool exit1 = false;
 
             do
             {
                 Console.WriteLine(GetRoom());
                 Thread.Sleep(2000);
 
+                //Heroes
+                
+
+                //Villains
                 Trainwreck t1 = new Trainwreck("The Trainwreck", 10, 10, 35, 25, 1, 14, "There's an intoxicated person here, don't look her in the eyes!");
                 Scalper s1 = new Scalper("The Scalper", 20, 20, 35, 25, 1, 14, "This guy doesn't know when to quit, I already have my tickets!");
+                Heckler h1 = new Heckler("The Heckler", 20, 20, 35, 25, 1, 14, "His sharp tongue is powered by his dim wit.  His words can cut right through you!");
 
-                Monster[] monsters = { t1, s1, };
+
+                Monster[] monsters = { t1, s1, h1 };
 
                 Random rand = new Random();
                 int randomNbr = rand.Next(monsters.Length);
@@ -61,11 +158,11 @@ namespace Dungeon
                         "M) Monster Info\n" +
                         "X) Exit\n");
 
-                    ConsoleKey userChoice = Console.ReadKey(true).Key;
+                    ConsoleKey userChoice1 = Console.ReadKey(true).Key;
 
                     Console.Clear();
 
-                    switch (userChoice)
+                    switch (userChoice1)
                     {
                         case ConsoleKey.A:
                             Console.WriteLine("Attack");
@@ -103,24 +200,24 @@ namespace Dungeon
                             break;
                         case ConsoleKey.X:
                         case ConsoleKey.E:
-                            Console.WriteLine("No one likes a quitter!");
-                            exit = true;
+                            Console.WriteLine("To get backstage, you must perservere!");
+                            exit1 = true;
                             break;
                         default:
-                            Console.WriteLine("Thou hast chosen an improper action.  Triest thou again!");
+                            Console.WriteLine("ah ah ah, you didn't say the magic word.");
                             break;
                     }//end switch
                     #endregion
 
                     if (player.Life <= 0)
                     {
-                        Console.WriteLine("Dude, you died!");
+                        Console.WriteLine("Failure!  Now you'll never get backstage!");
                         Console.WriteLine($"You defeated {score} monsters during your game!");
-                        exit = true;
+                        exit1 = true;
                     }
 
-                } while (!exit && !reload); //end inside do
-            } while (!exit); // end outer do
+                } while (!exit1 && !reload); //end inside do
+            } while (!exit1); // end outer do
 
             Console.WriteLine("You defeated " + score + " monster" + (score == 1 ? "." : "s."));
 
