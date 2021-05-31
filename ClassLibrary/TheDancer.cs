@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    public class Heckler : Monster
+    public class Dancer : Monster
     {
         //ctor
-        public Heckler(string name, int life, int maxLife, int hitChance, int block, int minDamage, int maxDamage, string description) : base(name, life, maxLife, hitChance, block, minDamage, maxDamage, description)
+        public Dancer(string name, int life, int maxLife, int hitChance, int block, int minDamage, int maxDamage, string description) : base(name, life, maxLife, hitChance, block, minDamage, maxDamage, description)
         {
             Name = name;
             Life = life;
-            MaxLife =maxLife;
+            MaxLife = maxLife;
             HitChance = hitChance;
             Block = block;
             MinDamage = minDamage;

@@ -133,9 +133,10 @@ namespace Dungeon
                 
 
                 //Villains
-                Trainwreck t1 = new Trainwreck("The Trainwreck", 10, 10, 35, 25, 1, 14, "There's an intoxicated person here, don't look her in the eyes!");
+                Trainwreck t1 = new Trainwreck("The Trainwreck", 10, 10, 35, 25, 1, 14, "There's an intoxobeast here, don't look her in the eyes!");
                 Scalper s1 = new Scalper("The Scalper", 20, 20, 35, 25, 1, 14, "This guy doesn't know when to quit, I already have my tickets!");
                 Heckler h1 = new Heckler("The Heckler", 20, 20, 35, 25, 1, 14, "His sharp tongue is powered by his dim wit.  His words can cut right through you!");
+                Dancer d1 = new Dancer("The Dancer", 20, 20, 35, 25, 1, 14, "The dancer is trying to hit you with some sick moves!"); 
 
 
                 Monster[] monsters = { t1, s1, h1 };
