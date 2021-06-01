@@ -62,5 +62,16 @@ In Game Ideas
 
 
 
+
+
+
+
+
+
+
+        //Dancer d1 = new ("The Dancer", 20, 20, 35, 25, 1, 14, "The dancer is trying to hit you with some sick moves!");
+        //MerchHound m1 = new MerchHound("The Merchound", 20, 20, 35, 25, 1, 14, "The Merchound will not take no from the staff, unfortunately they sold him plenty of weapons!");
+        //Giant g1 = new Giant("The Giant", 20, 20, 35, 25, 1, 14, "With his sheer size and stoic almost statue like gaze, he blocks the view of everything.");
+        //VIP v1 = new VIP("The VIP", 20, 20, 35, 25, 1, 14, "Lanyard flaunting, cocky-smirking, accessing the priority levels of the pit with ease....don't let this guy push you around.");
     }
 }

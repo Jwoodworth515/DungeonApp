@@ -25,7 +25,6 @@ namespace ClassLibrary
             }
             else
             {
-                //the attacker missed if we are reaching the else statment
                 Console.WriteLine($"{attacker.Name} missed!");
             }
         }//end DoAttack

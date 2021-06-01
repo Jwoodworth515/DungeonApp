@@ -18,13 +18,13 @@ namespace ClassLibrary
     }//end enum Hero
     public enum Villain
     {
-        TheScalper,
-        TheHeckler,
-        FunPolice,
-        TheTrainwreck,
-        TheBro,
-        MudPeople,
-        TheHippie
+        TheScalper = 1,
+        TheHeckler = 2,
+        FunPolice = 3,
+        TheTrainwreck = 4,
+        TheBro = 5,
+        MudPeople = 6,
+        TheHippie = 7,
     }//end enum Villian
 
 }//end namespace

@@ -43,15 +43,21 @@
   <ItemGroup>
     <Compile Include="Character.cs" />
     <Compile Include="Combat.cs" />
+    <Compile Include="FunPolice.cs" />
     <Compile Include="Monster.cs" />
+    <Compile Include="MudPeople.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Race.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TheDancer.cs" />
+    <Compile Include="TheBro.cs" />
     <Compile Include="TheHeckler.cs" />
+    <Compile Include="TheHippie.cs" />
     <Compile Include="TheScalper.cs" />
     <Compile Include="TheTrainwreck.cs" />
     <Compile Include="Weapon.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

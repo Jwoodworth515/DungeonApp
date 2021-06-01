@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    public class Dancer : Monster
+    public class MudPeople : Monster
     {
         //ctor
-        public Dancer(string name, int life, int maxLife, int hitChance, int block, int minDamage, int maxDamage, string description) : base(name, life, maxLife, hitChance, block, minDamage, maxDamage, description)
+        public MudPeople(string name, int life, int maxLife, int hitChance, int block, int minDamage, int maxDamage, string description) : base(name, life, maxLife, hitChance, block, minDamage, maxDamage, description)
         {
             Name = name;
             Life = life;

@@ -17,7 +17,7 @@ namespace ClassLibrary
         {
             HourChangeBack = DateTime.Now;
 
-            if (HourChangeBack.Hour < 6 || HourChangeBack.Hour > 18)
+            if (HourChangeBack.Hour > 6 || HourChangeBack.Hour < 18)
             {
                 hitChance += 10;
                 block = +10;
@@ -30,7 +30,7 @@ namespace ClassLibrary
         {
             return string.Format("{0}\n{1}",
                 base.ToString(),
-                HourChangeBack.Hour < 12 || HourChangeBack.Hour > 18 ? "Did this guy buy all of the tickets to the show!\n Look at him walking around snapping his rubberbands like he owns the place." : "He must of got stiffed with a bunch of tickets, he looks pretty marose now.");
+                HourChangeBack.Hour < 12 || HourChangeBack.Hour > 18 ? "Did this guy buy all of the tickets to the show!\n Look at him walking around snapping his rubberbands like he owns the place." : "He looks marose, must have be stuck with a fistful of ticets.");
         }//end ToString()
 
     }//end class

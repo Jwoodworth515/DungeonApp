@@ -13,10 +13,11 @@ namespace ClassLibrary
         public Villain CharacerRace { get; set; }
         public Weapon EquippedWeapon { get; set; }
         public static int Length { get; set; }
+        public string Description { get; set; }
 
         //ctors - FQ
 
-        public Player(string name, int hitChance, int block, int life, int maxLife, Hero characterRace, Weapon equippedWeapon)
+        public Player(string name, int hitChance, int block, int life, int maxLife, Hero characterRace, Weapon equippedWeapon, string description)
         {
             //prop = param;
             MaxLife = maxLife;//MaxLife is listed first because other values depend on this one to set properly.
@@ -26,12 +27,13 @@ namespace ClassLibrary
             Life = life;
             CharacterRace = characterRace;
             EquippedWeapon = equippedWeapon;
+            Description = description;
         }//end FQCTOR
 
         //methods
         public override string ToString()
         {
-            return string.Format("-=-= {0} =-=-\n" +
+            return string.Format("\n-=-= {0} =-=-\n" +
                 "Life: {1} of {2}\n" +
                 "Hit Chance: {3}%\n" +
                 "Weapon: \n{4}\n" +
